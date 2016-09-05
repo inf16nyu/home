@@ -15,6 +15,8 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec4]** 10/3 Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. 
 
+- **10/10 Final Project Proposal Due**
+
 - **[Lec5]** 10/17 Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
 
 - **10/24 Midterm Exam**
