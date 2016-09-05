@@ -10,13 +10,21 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec1]** 9/12 Intro and Logistics. Bayesian Networks. 
 
+  - PS1, due 9/19
+
 - **[Lec2]** 9/19 Undirected Graphical Models. Markov Random Fields. Ising Model. Applications to Statistical Physics.
+
+  - PS2, due 9/26
 
 - **[Lec3]** 9/26 Introduction to Inference. Exact Inference. Gibbs Sampling. 
 
+
 - **[Lec4]** 10/3 Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. 
 
-- **10/10 Final Project Proposal Due**
+  - PS3, due 10/10
+
+
+- **10/10 No lecture. Final Project Proposal Due** 
 
 - **[Lec5]** 10/17 Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
 
