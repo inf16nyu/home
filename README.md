@@ -1,6 +1,6 @@
 # Inference and Representations. 
-#### **Instructors:** David Sontag dsontag {@ | at} cs.nyu.edu and Joan Bruna bruna {@ | at} cims.nyu.edu
-#### **TA:** Rahul Krishnan rg2451 {@ | at} nyu.edu 
+#### *Instructors:* David Sontag dsontag {@ | at} cs.nyu.edu and Joan Bruna bruna {@ | at} cims.nyu.edu
+#### *TA:* Rahul Krishnan rg2451 {@ | at} nyu.edu 
 #### NYU, Fall 2016
 
 ###Lecture Location
@@ -10,7 +10,9 @@ Wednesdays, 7:10-8:00pm in [Meyer Hall of Physics](http://physics.as.nyu.edu/obj
 
 ###Office hours
 DS: Thursdays, 3:30-4:30pm. Location: 715 Broadway (intersection with Washington Place), 12th Floor, room 1204
+
 JB: Tuesdays, 4:00-5:00pm. Location: 60 5th ave, 6th floor, room 612.
+
 ###Grading
 problem sets (55%) + midterm exam (20%) + final project (20%) + participation (5%). 
 
