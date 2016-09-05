@@ -23,11 +23,6 @@ Online recordings: Most of the lectures and labs' videos will be posted to techt
 ##Syllabus
 This graduate level course presents fundamental tools of probabilistic graphical models, with the goal of performing inferential tasks on various types of data. We will study latent variable graphical models (Latent Dirichlet Allocation, Factor Analysis, Gaussian Processes), state-space models for time series (Kalman Filter, HMMs, ARMA), Gibbs Models and deep generative models (Variational autoencoders, GANs), covering both the methods (exact/approximate inference, sampling algorithms, exponential families) and modeling applications to text, images and medical data.
 
-##Grading
-Midterm
-Homeworks
-Project
-
 
 ## (Tentative) Schedule
 
@@ -40,7 +35,6 @@ Project
   - PS2, due 9/26
 
 - **[Lec3]** 9/26 Introduction to Inference. Exact Inference. Gibbs Sampling. 
-
 
 - **[Lec4]** 10/3 Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. 
 
