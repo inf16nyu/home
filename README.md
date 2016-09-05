@@ -42,11 +42,11 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
   - PS4, due 10/17
 
-- **10/10 No lecture. Project Proposal Due** 
+- **10/10 No lecture. ** 
 
 - **[Lec5]** 10/17 Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
 
- - PS5, due 10/24 
+ - Project Proposal Due 10/24 
 
 - **[Lec6]** 10/24 Approximate Inference. Markov Chain Monte-Carlo (MCMC). (Mo-Sl retreat) 
 
