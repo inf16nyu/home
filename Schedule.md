@@ -5,11 +5,9 @@
 | **[Lec1]** | 9/12  | Intro and Logistics. Bayesian Networks.  |      | PS1, due 9/19 |
 | **[Lec2]** | 9/19  | Undirected Graphical Models. Markov Random Fields. Ising Model. Applications to Statistical Physics. | |  PS2, due 9/26 |
 | **[Lec3]** | 9/26 | Introduction to Inference. Exact Inference. Gibbs Sampling. |   | PS3, due 10/3 |
-
-- **[Lec4]** 10/3 Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics].  
-
-  - PS4, due 10/17
-  - Project Proposal, due 10/24
+| **[Lec4]** | 10/3 | Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics].  |  | 
+ PS4, due 10/17,
+   Project Proposal, due 10/24 |
 
 - **10/10 No lecture. ** 
 
