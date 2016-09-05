@@ -13,8 +13,7 @@
 | 10 | 11/7 | **Lec7** Variational Inferece. Revisiting EM. Mean Field. |  |  |
 | 11 | 11/14 | **Lec8** Time Series Analysis. Spatial and Spectral models. GPs, ARMA, HMMs, RNNs. | | PS6 Due 11/21 | 
 | 12 | 11/21 | **Lec9** Modeling Structured Outputs. Conditional Random Fields (CRFs). Exponential families. Maximum Entropy Principle. Deep Structured Prediction. |  |  |
-| 13 | 11/28 |  **Lec10** Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Structured SVM. |  |
- PS7 Due 12/5 |
+| 13 | 11/28 |  **Lec10** Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Structured SVM. |  | PS7 Due 12/5 |
 | 14 | 12/5 | **Lec11** Causal Inference. |  |  |
 | 15 | 12/12 | **Lec12** Modeling Images and high-dimensional data. Boltzmann Machines. Autoencoders. Variational Autoencoders. |  |  |
 |  | 12/13  | **Lec13** Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs). |  | Project writeup Due 12/16. |
