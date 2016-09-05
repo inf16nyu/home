@@ -4,7 +4,7 @@
 ### NYU, Fall 2016
 
 ###Lecture
-Monday, 5:10-7:00pm, in Warren Weaver Hall 102
+Monday, 5:10-7:00pm, in Warren Weaver Hall 1302
 ###Recitation/Laboratory (required for all students)
 Wednesdays, 7:10-8:00pm in Warren Weaver Hall 102
 
