@@ -67,6 +67,7 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec13]** 12/13 Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs).
 
+- **[Final Day]** 12/19 Poster Presentations of Final Projects.
 
 
 
