@@ -31,6 +31,7 @@ problem sets (55%) + midterm exam (20%) + final project (20%) + participation (5
 
 #### Further Reading
   - Mike Jordan and Martin Wainwright, [Graphical Models, Exponential Families, and Variational Inference](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf)
+  - Shumway and Stoffer [Time Series Analysis and its Applications: with R examples](http://www.stat.pitt.edu/stoffer/tsa4/)
 
 ### Academic Honesty
 
