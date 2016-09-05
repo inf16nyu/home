@@ -1,10 +1,33 @@
 # Inference and Representations. 
-### Instructors: David Sontag and Joan Bruna. 
-### TA: Rahul Krishnan
+### Instructors: David Sontag dsontag {@ | at} cs.nyu.edu and Joan Bruna bruna {@ | at} cims.nyu.edu
+### TA: Rahul Krishnan 
 ### NYU, Fall 2016
+
+###Lecture
+Monday, 5:10-7:00pm, in Warren Weaver Hall 102
+###Recitation/Laboratory (required for all students)
+Wednesdays, 7:10-8:00pm in Warren Weaver Hall 102
+
+###Office hours
+Thursdays, 3:30-4:30pm. Location: 715 Broadway (intersection with Washington Place), 12th Floor, room 1204
+
+###Grading
+problem sets (55%) + midterm exam (20%) + final project (20%) + participation (5%). Problem Set policy
+Book (required): Kevin Murphy, Machine Learning: a Probabilistic Perspective, MIT Press, 2012. I recommend the latest (4th) printing, as the earlier editions had many typos. You can tell which printing you have as follows: check the inside cover, below the "Library of Congress" information. If it says "10 9 8 ... 4" you've got the (correct) fourth print.
+
+###Piazza 
+We will use Piazza to answer questions and post announcements about the course. Please sign up here. Students' use of Piazza, particularly for adequately answering other students' questions, will contribute toward their participation grade.
+Online recordings: Most of the lectures and labs' videos will be posted to techtalks.tv. Note, however, that class attendance is required.
+
 
 ##Syllabus
 This graduate level course presents fundamental tools of probabilistic graphical models, with the goal of performing inferential tasks on various types of data. We will study latent variable graphical models (Latent Dirichlet Allocation, Factor Analysis, Gaussian Processes), state-space models for time series (Kalman Filter, HMMs, ARMA), Gibbs Models and deep generative models (Variational autoencoders, GANs), covering both the methods (exact/approximate inference, sampling algorithms, exponential families) and modeling applications to text, images and medical data.
+
+##Grading
+Midterm
+Homeworks
+Project
+
 
 ## (Tentative) Schedule
 
@@ -21,10 +44,9 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec4]** 10/3 Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. 
 
-  - PS3, due 10/10
+  - PS3, due 10/17
 
-
-- **10/10 No lecture. Final Project Proposal Due** 
+- **10/10 No lecture. Project Proposal Due** 
 
 - **[Lec5]** 10/17 Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
 
