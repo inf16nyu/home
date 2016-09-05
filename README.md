@@ -36,17 +36,21 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec3]** 9/26 Introduction to Inference. Exact Inference. Gibbs Sampling. 
 
+  - PS3, due 10/3
+
 - **[Lec4]** 10/3 Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. 
 
-  - PS3, due 10/17
+  - PS4, due 10/17
 
 - **10/10 No lecture. Project Proposal Due** 
 
 - **[Lec5]** 10/17 Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
 
-- **10/24 Midterm Exam**
+ - PS5, due 10/24 
 
-- **[Lec6]** 10/31 Approximate Inference. Markov Chain Monte-Carlo (MCMC). (Mo-Sl retreat) 
+- **[Lec6]** 10/24 Approximate Inference. Markov Chain Monte-Carlo (MCMC). (Mo-Sl retreat) 
+
+- **10/31 Midterm Exam**
 
 - **[Lec7]** 11/7 Variational Inferece. Revisiting EM. Mean Field. 
 
