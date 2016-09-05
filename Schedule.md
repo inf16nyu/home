@@ -7,7 +7,7 @@
 | 4 | 9/26 | Lec3:Introduction to Inference. Exact Inference. Gibbs Sampling. |   | PS3, due 10/3 |
 | 5 | 10/3 | Lec4:Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics].  |  | PS4, due 10/17, Project Proposal, due 10/24 |
 | 6 | 10/10 |  No lecture. |  |  | 
-| 7 |  10/17 | **[Lec5]** Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. |  |  PS5 Due 10/24 |
+| 7 |  10/17 | **Lec5** Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. |  |  PS5 Due 10/24 |
 
 - **[Lec6]** 10/24 Approximate Inference. Markov Chain Monte-Carlo (MCMC). (Mo-Sl retreat) 
 
