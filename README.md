@@ -7,11 +7,11 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 ## (Tentative) Schedule
 
-- **[Lec1]** Intro and Logistics. Bayesian Networks
+- **[Lec1]** Intro and Logistics. Bayesian Networks.
 
 - **[Lec2]** Undirected Graphical Models. Markov Random Fields. Ising Model. 
 
-- **[Lec3]** Introduction to Inference. Exact Inference. Gibbs Sampling. Expectation-Maximization (EM) Algorithm
+- **[Lec3]** Introduction to Inference. Exact Inference. Gibbs Sampling. Expectation-Maximization (EM) Algorithm.
 
 - **[Lec4]** Modeling Survey Data. Factor Analysis. PCA.  
 
