@@ -1,12 +1,12 @@
 # Inference and Representations. 
-### Instructors: David Sontag dsontag {@ | at} cs.nyu.edu and Joan Bruna bruna {@ | at} cims.nyu.edu
-### TA: Rahul Krishnan 
+### **Instructors:** David Sontag dsontag {@ | at} cs.nyu.edu and Joan Bruna bruna {@ | at} cims.nyu.edu
+### **TA:** Rahul Krishnan 
 ### NYU, Fall 2016
 
 ###Lecture
 Monday, 5:10-7:00pm, in Warren Weaver Hall 1302
 ###Recitation/Laboratory (required for all students)
-Wednesdays, 7:10-8:00pm in Warren Weaver Hall 102
+Wednesdays, 7:10-8:00pm in MEYR 121
 
 ###Office hours
 Thursdays, 3:30-4:30pm. Location: 715 Broadway (intersection with Washington Place), 12th Floor, room 1204
