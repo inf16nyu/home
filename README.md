@@ -6,7 +6,7 @@
 ###Lecture
 Monday, 5:10-7:00pm, in Warren Weaver Hall 1302
 ###Recitation/Laboratory (required for all students)
-Wednesdays, 7:10-8:00pm in Meyer Hall of Physics 121
+Wednesdays, 7:10-8:00pm in [Meyer Hall of Physics](http://physics.as.nyu.edu/object/physics.directions) 121 
 
 ###Office hours
 Thursdays, 3:30-4:30pm. Location: 715 Broadway (intersection with Washington Place), 12th Floor, room 1204
