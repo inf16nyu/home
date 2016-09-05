@@ -7,31 +7,33 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 ## (Tentative) Schedule
 
-- **[Lec1]** Intro and Logistics. Bayesian Networks.
+- **[Lec1]** 9/12 Intro and Logistics. Bayesian Networks. 
 
-- **[Lec2]** Undirected Graphical Models. Markov Random Fields. Ising Model. 
+- **[Lec2]** 9/19 Undirected Graphical Models. Markov Random Fields. Ising Model. 
 
-- **[Lec3]** Introduction to Inference. Exact Inference. Gibbs Sampling. 
+- **[Lec3]** 9/26 Introduction to Inference. Exact Inference. Gibbs Sampling. 
 
-- **[Lec4]** Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. 
+- **[Lec4]** 10/3 Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. 
 
-- **[Lec5]** Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
+- **[Lec5]** 10/17 Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
 
-- **[Lec6]** Approximate Inference. Markov Chain Monte-Carlo (MCMC).
+- **[Lec6]** 10/24 Approximate Inference. Markov Chain Monte-Carlo (MCMC). (Mo-Sl retreat) 
 
-- **[Lec7]** Exponential Families. Revisiting EM. Variational Inference.
+- **[Lec7]** 10/31 Exponential Families. Revisiting EM. Variational Inference.
 
-- **[Lec8]** Variational Inference (contd). Maximum Entropy Principle. Applications to Statistical Physics. 
+- **[Lec8]** 11/7 Variational Inference (contd). Maximum Entropy Principle. Applications to Statistical Physics. (midterm grades due)
 
-- **[Lec9]** Modeling Structured Outputs. Conditional Random Fields (CRFs). Deep Structured Prediction.
+- **[Lec9]** 11/14 Modeling Structured Outputs. Conditional Random Fields (CRFs). Deep Structured Prediction.
 
-- **[Lec10]** Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Application to ??
+- **[Lec10]** 11/21 Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Application to ??
 
-- **[Lec11]** Causal Inference. 
+- **[Lec11]** 11/28 Causal Inference. 
 
-- **[Lec12]** Modeling Images and high-dimensional data. Boltzmann Machines. Autoencoders. Variational Autoencoders. 
+- **[Lec12]** 12/5 Modeling Images and high-dimensional data. Boltzmann Machines. Autoencoders. Variational Autoencoders. 
 
-- **[Lec13]** Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs). 
+- **[Lec13]** 12/12 Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs).
+
+- **[Lec14]** 12/13 
 
 
 
