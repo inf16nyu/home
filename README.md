@@ -17,7 +17,8 @@ problem sets (55%) + midterm exam (20%) + final project (20%) + participation (5
 ###Bibliography
 #### Core Materials
   - Kevin Murphy, [Machine Learning: a Probabilistic Perspective](http://www.cs.ubc.ca/%7Emurphyk/MLbook/index.html), MIT Press, 2012. I recommend the latest (4th) printing, as the earlier editions had many typos. You can tell which printing you have as follows: check the inside cover, below the "Library of Congress" information. If it says "10 9 8 ... 4" you've got the (correct) fourth print.
-  - [MIT lecture notes](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-438-algorithms-for-inference-fall-2014/lecture-notes/) on algorithms for inference
+  - [MIT lecture notes](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-438-algorithms-for-inference-fall-2014/lecture-notes/) on algorithms for inference.
+  - Mike Jordan's upcoming book on [Probabilistic Graphical Models](https://people.eecs.berkeley.edu/~jordan/prelims/)
   - Optional course text: [Probabilistic Graphical Models: Principles and Techniques](http://pgm.stanford.edu/) by Daphne Koller and Nir Friedman, MIT Press (2009).
   - [Probabilistic Programming and Bayesian Methods for Hackers](https://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) by Cam Davidson Pilon
   - Trevor Hastie, Rob Tibshirani, and Jerry Friedman, [Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/), Second Edition, Springer, 2009. (Can be downloaded as PDF file.)6
