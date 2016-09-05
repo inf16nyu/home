@@ -57,15 +57,23 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec8]** 11/14 Time Series Analysis. Spatial and Spectral models. GPs, ARMA, HMMs, RNNs.  (midterm grades due)
 
+  - PS6 Due 11/21 
+
 - **[Lec9]** 11/21 Modeling Structured Outputs. Conditional Random Fields (CRFs). Exponential families. Maximum Entropy Principle. Deep Structured Prediction.
 
-- **[Lec10]** 11/28 Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Application to ??
+- **[Lec10]** 11/28 Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Structured SVM.
+
+  - PS7 Due 12/5 
 
 - **[Lec11]** 12/5 Causal Inference. 
+
+  - PS8 Due 12/12 
 
 - **[Lec12]** 12/12 Modeling Images and high-dimensional data. Boltzmann Machines. Autoencoders. Variational Autoencoders. 
 
 - **[Lec13]** 12/13 Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs).
+
+  - Project writeup Due 12/16. 
 
 - **[Final Day]** 12/19 Poster Presentations of Final Projects.
 
