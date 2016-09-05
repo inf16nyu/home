@@ -44,7 +44,9 @@ Late submission policy:  During the semester you are allowed at most two extensi
 
 ###Piazza 
 We will use Piazza to answer questions and post announcements about the course. Please sign up here. Students' use of Piazza, particularly for adequately answering other students' questions, will contribute toward their participation grade.
-Online recordings: Most of the lectures and labs' videos will be posted to techtalks.tv. Note, however, that class attendance is required.
+
+###Online recordings 
+Most of the lectures and labs' videos will be posted to techtalks.tv. Note, however, that class attendance is required.
 
 
 ##Syllabus
