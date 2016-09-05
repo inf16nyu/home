@@ -12,8 +12,29 @@ Wednesdays, 7:10-8:00pm in [Meyer Hall of Physics](http://physics.as.nyu.edu/obj
 Thursdays, 3:30-4:30pm. Location: 715 Broadway (intersection with Washington Place), 12th Floor, room 1204
 
 ###Grading
-problem sets (55%) + midterm exam (20%) + final project (20%) + participation (5%). Problem Set policy
-Book (required): Kevin Murphy, Machine Learning: a Probabilistic Perspective, MIT Press, 2012. I recommend the latest (4th) printing, as the earlier editions had many typos. You can tell which printing you have as follows: check the inside cover, below the "Library of Congress" information. If it says "10 9 8 ... 4" you've got the (correct) fourth print.
+problem sets (55%) + midterm exam (20%) + final project (20%) + participation (5%). 
+
+###Reference materials
+
+  - Kevin Murphy, Machine Learning: a Probabilistic Perspective, MIT Press, 2012. I recommend the latest (4th) printing, as the earlier editions had many typos. You can tell which printing you have as follows: check the inside cover, below the "Library of Congress" information. If it says "10 9 8 ... 4" you've got the (correct) fourth print.
+  - Optional course text: Probabilistic Graphical Models: Principles and Techniques by Daphne Koller and Nir Friedman, MIT Press (2009).
+  - Probabilistic Programming and Bayesian Methods for Hackers by Cam Davidson Pilon
+  - Trevor Hastie, Rob Tibshirani, and Jerry Friedman, Elements of Statistical Learning, Second Edition, Springer, 2009. (Can be downloaded as PDF file.)6
+  - David Barber, Bayesian Reasoning and Machine Learning, Cambridge University Press, 2012. (Can be downloaded as PDF file.)
+  - Chapter 2 of Murphy
+  - Review notes from Stanford's machine learning class
+  - Sam Roweis's probability review
+  - Convex Optimization by Stephen Boyd and Lieven Vandenberghe. (Can be downloaded as PDF file.)
+
+### Academic Honesty
+
+We expect you to try solving each problem set on your own. However, when being stuck on a problem, we encourage you to collaborate with other students in the class, subject to the following rules:
+  - You may discuss a problem with any student in this class, and work together on solving it. This can involve brainstorming and verbally discussing the problem, going together through possible solutions, but should not involve one student telling another a complete solution.
+  - Once you solve the homework, you must write up your solutions on your own, without looking at other people's write-ups or giving your write-up to others.
+  - In your solution for each problem, you must write down the names of any person with whom you discussed it. This will not affect your grade.
+  - Do not consult solution manuals or other people's solutions from similar courses.
+
+Late submission policy:  During the semester you are allowed at most two extensions on the homework assignment. Each extension is for at most 48 hours and carries a penalty of 25% off your assignment.
 
 ###Piazza 
 We will use Piazza to answer questions and post announcements about the course. Please sign up here. Students' use of Piazza, particularly for adequately answering other students' questions, will contribute toward their participation grade.
