@@ -17,23 +17,24 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec5]** 10/17 Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
 
-- **[Lec6]** 10/24 Approximate Inference. Markov Chain Monte-Carlo (MCMC). (Mo-Sl retreat) 
+- 10/24 Midterm Exam
 
-- **[Lec7]** 10/31 Exponential Families. Revisiting EM. Variational Inference.
+- **[Lec6]** 10/31 Approximate Inference. Markov Chain Monte-Carlo (MCMC). (Mo-Sl retreat) 
 
-- **[Lec8]** 11/7 Variational Inference (contd). Maximum Entropy Principle. Applications to Statistical Physics. (midterm grades due)
+- **[Lec7]** 11/7 Exponential Families. Revisiting EM. Variational Inference.
 
-- **[Lec9]** 11/14 Modeling Structured Outputs. Conditional Random Fields (CRFs). Deep Structured Prediction.
+- **[Lec8]** 11/14 Variational Inference (contd). Maximum Entropy Principle. Applications to Statistical Physics. (midterm grades due)
 
-- **[Lec10]** 11/21 Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Application to ??
+- **[Lec9]** 11/21 Modeling Structured Outputs. Conditional Random Fields (CRFs). Deep Structured Prediction.
 
-- **[Lec11]** 11/28 Causal Inference. 
+- **[Lec10]** 11/28 Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Application to ??
 
-- **[Lec12]** 12/5 Modeling Images and high-dimensional data. Boltzmann Machines. Autoencoders. Variational Autoencoders. 
+- **[Lec11]** 12/5 Causal Inference. 
 
-- **[Lec13]** 12/12 Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs).
+- **[Lec12]** 12/12 Modeling Images and high-dimensional data. Boltzmann Machines. Autoencoders. Variational Autoencoders. 
 
-- **[Lec14]** 12/13 
+- **[Lec13]** 12/13 Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs).
+
 
 
 
