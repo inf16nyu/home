@@ -15,16 +15,18 @@ Thursdays, 3:30-4:30pm. Location: 715 Broadway (intersection with Washington Pla
 problem sets (55%) + midterm exam (20%) + final project (20%) + participation (5%). 
 
 ###Reference materials
-
+####Core Materials
   - Kevin Murphy, Machine Learning: a Probabilistic Perspective, MIT Press, 2012. I recommend the latest (4th) printing, as the earlier editions had many typos. You can tell which printing you have as follows: check the inside cover, below the "Library of Congress" information. If it says "10 9 8 ... 4" you've got the (correct) fourth print.
   - Optional course text: Probabilistic Graphical Models: Principles and Techniques by Daphne Koller and Nir Friedman, MIT Press (2009).
   - Probabilistic Programming and Bayesian Methods for Hackers by Cam Davidson Pilon
   - Trevor Hastie, Rob Tibshirani, and Jerry Friedman, Elements of Statistical Learning, Second Edition, Springer, 2009. (Can be downloaded as PDF file.)6
   - David Barber, Bayesian Reasoning and Machine Learning, Cambridge University Press, 2012. (Can be downloaded as PDF file.)
-  - Chapter 2 of Murphy
+####Background on Probability and Optimization
   - Review notes from Stanford's machine learning class
   - Sam Roweis's probability review
   - Convex Optimization by Stephen Boyd and Lieven Vandenberghe. (Can be downloaded as PDF file.)
+####Further Reading
+  - Mike Jordan and Martin Wainwright. 
 
 ### Academic Honesty
 
