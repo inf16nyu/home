@@ -35,8 +35,3 @@
 
 - **[Final Day]** 12/19 Poster Presentations of Final Projects.
 
-
-| Lec1      |  | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
