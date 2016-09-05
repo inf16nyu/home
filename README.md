@@ -9,7 +9,7 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec1]** 9/12 Intro and Logistics. Bayesian Networks. 
 
-- **[Lec2]** 9/19 Undirected Graphical Models. Markov Random Fields. Ising Model. 
+- **[Lec2]** 9/19 Undirected Graphical Models. Markov Random Fields. Ising Model. Applications to Statistical Physics.
 
 - **[Lec3]** 9/26 Introduction to Inference. Exact Inference. Gibbs Sampling. 
 
@@ -21,11 +21,11 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec6]** 10/31 Approximate Inference. Markov Chain Monte-Carlo (MCMC). (Mo-Sl retreat) 
 
-- **[Lec7]** 11/7 Exponential Families. Revisiting EM. Variational Inference.
+- **[Lec7]** 11/7 Variational Inferece. Revisiting EM. Mean Field. 
 
-- **[Lec8]** 11/14 Variational Inference (contd). Maximum Entropy Principle. Applications to Statistical Physics. (midterm grades due)
+- **[Lec8]** 11/14 Time Series Analysis. Spatial and Spectral models. GPs, ARMA, HMMs, RNNs.  (midterm grades due)
 
-- **[Lec9]** 11/21 Modeling Structured Outputs. Conditional Random Fields (CRFs). Deep Structured Prediction.
+- **[Lec9]** 11/21 Modeling Structured Outputs. Conditional Random Fields (CRFs). Exponential families. Maximum Entropy Principle. Deep Structured Prediction.
 
 - **[Lec10]** 11/28 Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Application to ??
 
