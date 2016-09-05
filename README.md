@@ -67,8 +67,6 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec11]** 12/5 Causal Inference. 
 
-  - PS8 Due 12/12 
-
 - **[Lec12]** 12/12 Modeling Images and high-dimensional data. Boltzmann Machines. Autoencoders. Variational Autoencoders. 
 
 - **[Lec13]** 12/13 Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs).
