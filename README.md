@@ -56,6 +56,8 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 ## (Tentative) Schedule
 
+- **[Lab]** 9/7 First Lab. Background.
+
 - **[Lec1]** 9/12 Intro and Logistics. Bayesian Networks. 
 
   - PS1, due 9/19
