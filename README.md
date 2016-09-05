@@ -1,7 +1,11 @@
 # Inference and Representations. 
 #### *Instructors:* David Sontag dsontag {@ | at} cs.nyu.edu and Joan Bruna bruna {@ | at} cims.nyu.edu
 #### *TA:* Rahul Krishnan rg2451 {@ | at} nyu.edu 
-#### NYU, Fall 2016
+
+##Syllabus
+This graduate level course presents fundamental tools of probabilistic graphical models, with an emphasis on designing and manipulating generative models, and performing inferential tasks when applied to various types of data. 
+
+We will study latent variable graphical models (Latent Dirichlet Allocation, Factor Analysis, Gaussian Processes), state-space models for time series (Kalman Filter, HMMs, ARMA), Gibbs Models, Deep generative models (Variational autoencoders, GANs), and causal inference, covering both the methods (exact/approximate inference, sampling algorithms, exponential families) and modeling applications to text, images and medical data.
 
 ###Lecture Location
 Monday, 5:10-7:00pm, in Warren Weaver Hall 1302
@@ -52,8 +56,6 @@ We will use [Piazza](http://piazza.com/nyu/fall2016/dsga1005csciga2569/home) to 
 Most of the lectures and labs' videos will be posted to techtalks.tv. Note, however, that class attendance is required.
 
 
-##Syllabus
-This graduate level course presents fundamental tools of probabilistic graphical models, with the goal of performing inferential tasks on various types of data. We will study latent variable graphical models (Latent Dirichlet Allocation, Factor Analysis, Gaussian Processes), state-space models for time series (Kalman Filter, HMMs, ARMA), Gibbs Models and deep generative models (Variational autoencoders, GANs), covering both the methods (exact/approximate inference, sampling algorithms, exponential families) and modeling applications to text, images and medical data.
 
 
 ## (Tentative) Schedule
