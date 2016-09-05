@@ -1,5 +1,6 @@
 # Inference and Representations. 
 ## Instructors: David Sontag and Joan Bruna. 
+### TA: Rahul Krishnan
 ## NYU, Fall 2016
 
 ##Syllabus
