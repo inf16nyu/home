@@ -28,7 +28,7 @@ problem sets (55%) + midterm exam (20%) + final project (20%) + participation (5
   - Convex Optimization by Stephen Boyd and Lieven Vandenberghe. (Can be downloaded as PDF file.)
 
 #### Further Reading
-  - Mike Jordan and Martin Wainwright. 
+  - Mike Jordan and Martin Wainwright, [Graphical Models, Exponential Families, and Variational Inference](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf)
 
 ### Academic Honesty
 
