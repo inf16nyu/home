@@ -11,11 +11,11 @@ This graduate level course presents fundamental tools of probabilistic graphical
 
 - **[Lec2]** Undirected Graphical Models. Markov Random Fields. Ising Model. 
 
-- **[Lec3]** Introduction to Inference. Exact Inference. Gibbs Sampling. Expectation-Maximization (EM) Algorithm.
+- **[Lec3]** Introduction to Inference. Exact Inference. Gibbs Sampling. 
 
-- **[Lec4]** Modeling Survey Data. Factor Analysis. PCA.  
+- **[Lec4]** Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. 
 
-- **[Lec5]** Modeling Text Data. Topic Models. Bayesian Non-parametrics. Latent Dirichlet Allocation.
+- **[Lec5]** Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics]. 
 
 - **[Lec6]** Approximate Inference. Markov Chain Monte-Carlo (MCMC).
 
