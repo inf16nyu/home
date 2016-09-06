@@ -1,10 +1,12 @@
-# Inference and Representation. 
+# Inference and Representation (DS-GA-1005, CSCI-GA.2569)
 #### *Course staff:*
 | | Name | E-mail (@cs.nyu.edu) |
 |----------|---------------|----------------|
 |Instructor| [David Sontag](http://cs.nyu.edu/~dsontag/)        | dsontag           |
 |Instructor| [Joan Bruna](http://cims.nyu.edu/~bruna/)        | bruna        |
 |TA| [Rahul Krishnan](http://cs.nyu.edu/~rahul/) | rahul |
+|Grader| [Aahlad Manas](http://cs.nyu.edu/~rahul/) | apm470 {@/at} nyu.edu |
+|Grader| Alex Nowak | anv273 {@/at} nyu.edu |
 
 ##Syllabus
 This graduate level course presents fundamental tools of probabilistic graphical models, with an emphasis on designing and manipulating generative models, and performing inferential tasks when applied to various types of data. 
