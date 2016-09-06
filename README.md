@@ -17,8 +17,8 @@ DS: TBD.
 
 JB: Tuesdays, 4:00-5:00pm. Location: 60 5th ave, 6th floor, room 612.
 
-###Grading
-problem sets (50%) + midterm exam (25%) + final project (20%) + participation (5%). 
+###(Tentative) Grading
+problem sets (45%) + midterm exam (25%) + final project (25%) + participation (5%). 
 
 ###Piazza 
 We will use [Piazza](http://piazza.com/nyu/fall2016/dsga1005csciga2569/home) to answer questions and post announcements about the course. Please sign up [here](http://piazza.com/nyu/fall2016/dsga1005csciga2569). Students' use of Piazza, particularly for adequately answering other students' questions, will contribute toward their participation grade.
