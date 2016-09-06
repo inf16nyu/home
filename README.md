@@ -24,7 +24,7 @@ problem sets (45%) + midterm exam (25%) + final project (25%) + participation (5
 We will use [Piazza](http://piazza.com/nyu/fall2016/dsga1005csciga2569/home) to answer questions and post announcements about the course. Please sign up [here](http://piazza.com/nyu/fall2016/dsga1005csciga2569). Students' use of Piazza, particularly for adequately answering other students' questions, will contribute toward their participation grade.
 
 ###Online recordings 
-Most of the lectures and labs' videos will be posted to techtalks.tv. Note, however, that class attendance is required.
+Most of the lectures and labs' videos will be posted to NYU Classes. Note, however, that class attendance is required.
 
 ## (Tentative) Schedule
 
