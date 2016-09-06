@@ -5,7 +5,7 @@
 |Instructor| [David Sontag](http://cs.nyu.edu/~dsontag/)        | dsontag           |
 |Instructor| [Joan Bruna](http://cims.nyu.edu/~bruna/)        | bruna        |
 |TA| [Rahul Krishnan](http://cs.nyu.edu/~rahul/) | rahul |
-|Grader| [Aahlad Manas](http://cs.nyu.edu/~rahul/) | apm470 {@/at} nyu.edu |
+|Grader| Aahlad Manas | apm470 {@/at} nyu.edu |
 |Grader| Alex Nowak | anv273 {@/at} nyu.edu |
 
 ##Syllabus
