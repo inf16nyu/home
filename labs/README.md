@@ -15,10 +15,11 @@ with the ipython notebooks.
 ### What do I need to run the notebooks?
 
 * Install [Anaconda Python](https://www.continuum.io/downloads). (This is a version of python that comes prepackaged with many scientific 
-computing libraries saving you the trouble of dealing with dependencies. It does not affect your system python and can be 
-uninstalled by deleting the directory and removing the addition of the directory to your PATH environment variable.)
-* Go to the directory where the ipython notebooks are located and run ``ipython notebook``. This will open the ipython notebook in a browser. 
-* If there are additional packages required for a specific lab, Ill point them out as we go along. 
+computing libraries (numpy/scipy/scikit-learn) saving you the trouble of dealing with installing each one separately and dealing with dependencies. It does not affect your system python and can be 
+uninstalled easily)
+* Go to the directory where the ipython notebooks are located and run ``ipython notebook``. This will run an ipython server on your local machine and open a browser tab that connects you to the ipython server (typically running on
+``localhost:8888``
+* If there are additional packages required for a specific lab, they will be pointed out as we go along. 
 
 ### Some useful links
 
