@@ -1,8 +1,9 @@
 # Inference and Representations. 
 #### *Instructors:*
+| Name | E-mail (@cs.nyu.edu) |
 | ---------------|----------------|
-| David Sontag        | dsontag {@ \| at} cs.nyu.edu           |
-| Joan Bruna        | bruna {@ \| at} cims.nyu.edu           |
+| David Sontag        | dsontag           |
+| Joan Bruna        | bruna        |
 
 #### *TA:* Rahul Krishnan rg2451 {@ | at} nyu.edu 
 
