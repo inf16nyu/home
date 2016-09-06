@@ -2,9 +2,9 @@
 #### *Course staff:*
 | | Name | E-mail (@cs.nyu.edu) |
 |----------|---------------|----------------|
-|Instructor| David Sontag        | dsontag           |
-|Instructor| Joan Bruna        | bruna        |
-|TA| Rahul Krishnan | rahul |
+|Instructor| [David Sontag](http://cs.nyu.edu/~dsontag/)        | dsontag           |
+|Instructor| [Joan Bruna](http://cims.nyu.edu/~bruna/)        | bruna        |
+|TA| [Rahul Krishnan](http://cs.nyu.edu/~rahul/) | rahul |
 
 ##Syllabus
 This graduate level course presents fundamental tools of probabilistic graphical models, with an emphasis on designing and manipulating generative models, and performing inferential tasks when applied to various types of data. 
