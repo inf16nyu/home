@@ -3,8 +3,8 @@
 
 |                |                |
 | ---------------|----------------|
-| David Sontag        | dsontag {@ | at} cs.nyu.edu           |
-| Joan Bruna        | bruna {@ | at} cims.nyu.edu           |
+| David Sontag        | dsontag {@ \| at} cs.nyu.edu           |
+| Joan Bruna        | bruna {@ \| at} cims.nyu.edu           |
 
 #### *TA:* Rahul Krishnan rg2451 {@ | at} nyu.edu 
 
