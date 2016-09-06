@@ -42,7 +42,7 @@ Most of the lectures and labs' videos will be posted to NYU Classes. Note, howev
 | 5 | 10/3 | **Lec4** Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics].  |  | PS4, due 10/17, Project Proposal, due 10/24 |
 | 6 | 10/10 |  No lecture. |  |  | 
 | 7 |  10/17 | **Lec5** Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. |  |  PS5 Due 10/24 |
-| 8 | 10/24 | **Lec6**Approximate Inference. Markov Chain Monte-Carlo (MCMC). |  |   | 
+| 8 | 10/24 | **Lec6** Approximate Inference. Markov Chain Monte-Carlo (MCMC). |  |   | 
 | 9 | 10/31 | **Midterm Exam** | |  |
 | 10 | 11/7 | **Lec7** Variational Inferece. Revisiting EM. Mean Field. |  |  |
 | 11 | 11/14 | **Lec8** Time Series Analysis. Spatial and Spectral models. GPs, ARMA, HMMs, RNNs. | | PS6 Due 11/21 | 
