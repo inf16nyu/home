@@ -1,4 +1,4 @@
-# Inference and Representations. 
+# Inference and Representation. 
 #### *Course staff:*
 | | Name | E-mail (@cs.nyu.edu) |
 |----------|---------------|----------------|
