@@ -34,6 +34,8 @@ Most of the lectures and labs' videos will be posted to NYU Classes. Note, howev
 
 ## (Tentative) Schedule
 
+### The first lab is Wednesday is *this week*, Weds. 9/7.
+
 | Week        | Lecture Date           | Topic       |  Reference          |  Deliverables  |
 | ---------------|----------------| ------------|---------------------|---------------|
 | 2 | 9/12  | **Lec1** Intro and Logistics. Bayesian Networks.  |      | PS1, due 9/19 |
