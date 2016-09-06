@@ -14,5 +14,5 @@ with the ipython notebooks.
 
 ### What do I need to get the notebooks running?
 
-* Install Anaconda[https://www.continuum.io/downloads] Python 
+* Install (Anaconda)[https://www.continuum.io/downloads] Python 
 * Go to the dire
