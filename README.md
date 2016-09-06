@@ -45,7 +45,7 @@ Most of the lectures and labs' videos will be posted to NYU Classes. Note, howev
 | 8 | 10/24 | **Lec6** Approximate Inference. Markov Chain Monte-Carlo (MCMC). |  |   | 
 | 9 | 10/31 | **Midterm Exam** | |  |
 | 10 | 11/7 | **Lec7** Variational Inferece. Revisiting EM. Mean Field. |  |  |
-| 11 | 11/14 | **Lec8** Time Series Analysis. Spatial and Spectral models. GPs, ARMA, HMMs, RNNs. | | PS6 Due 11/21 | 
+| 11 | 11/14 | **Lec8** Modeling Time Series Data. Spatial and Spectral models. GPs, ARMA, HMMs, RNNs. | | PS6 Due 11/21 | 
 | 12 | 11/21 | **Lec9** Modeling Structured Outputs. Conditional Random Fields (CRFs). Exponential families. Maximum Entropy Principle. Deep Structured Prediction. |  |  |
 | 13 | 11/28 |  **Lec10** Structured Outputs (contd). Dual Decomposition. Integer Linear Programming. Structured SVM. |  | PS7 Due 12/5 |
 | 14 | 12/5 | **Lec11** Causal Inference. |  |  |
