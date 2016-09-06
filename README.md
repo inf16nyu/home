@@ -34,7 +34,7 @@ Most of the lectures and labs' videos will be posted to NYU Classes. Note, howev
 
 ## (Tentative) Schedule
 
-### The first lab is Wednesday is *this week*, Weds. 9/7.
+#### The first lab is Wednesday *this week*, Weds. 9/7.
 
 | Week        | Lecture Date           | Topic       |  Reference          |  Deliverables  |
 | ---------------|----------------| ------------|---------------------|---------------|
