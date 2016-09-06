@@ -1,6 +1,5 @@
 # Inference and Representations. 
 #### *Instructors:*
-
 |                |                |
 | ---------------|----------------|
 | David Sontag        | dsontag {@ \| at} cs.nyu.edu           |
