@@ -79,4 +79,5 @@ We expect you to try solving each problem set on your own. However, when being s
   - In your solution for each problem, you must write down the names of any person with whom you discussed it. This will not affect your grade.
   - Do not consult solution manuals or other people's solutions from similar courses.
 
-Late submission policy:  During the semester you are allowed at most two extensions on the homework assignment. Each extension is for at most 48 hours and carries a penalty of 25% off your assignment.
+## Late submission policy
+During the semester you are allowed at most two extensions on the homework assignment. Each extension is for at most 48 hours and carries a penalty of 25% off your assignment.
