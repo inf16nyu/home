@@ -19,7 +19,7 @@ Monday, 5:10-7:00pm, in Warren Weaver Hall 1302
 Wednesdays, 7:10-8:00pm in [Meyer Hall of Physics](http://physics.as.nyu.edu/object/physics.directions) 121 
 
 ###Office hours
-DS: TBD.
+DS: Mondays, 10:00-11:00am. Location: 715 Broadway (intersection with Washington Place), 12th Floor, room 1204.
 
 JB: Tuesdays, 4:00-5:00pm. Location: 60 5th ave, 6th floor, room 612.
 
