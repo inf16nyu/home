@@ -21,7 +21,7 @@ Wednesdays, 7:10-8:00pm in [Meyer Hall of Physics](http://physics.as.nyu.edu/obj
 ###Office hours
 DS: Mondays, 10:00-11:00am. Location: 715 Broadway (intersection with Washington Place), 12th Floor, room 1204.
 
-JB: Tuesdays, 4:00-5:00pm. Location: 60 5th ave, 6th floor, room 612.
+JB: Thursdays, 4:00-5:00pm. Location: 60 5th ave, 6th floor, room 612.
 
 ###(Tentative) Grading
 problem sets (45%) + midterm exam (25%) + final project (25%) + participation (5%). 
