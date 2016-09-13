@@ -23,7 +23,7 @@ DS: Mondays, 10:00-11:00am. Location: 715 Broadway (intersection with Washington
 
 JB: Thursdays, 4:00-5:00pm. Location: 60 5th ave, 6th floor, room 612.
 
-###(Tentative) Grading
+###Grading
 problem sets (45%) + midterm exam (25%) + final project (25%) + participation (5%). 
 
 ###Piazza 
@@ -32,13 +32,10 @@ We will use [Piazza](http://piazza.com/nyu/fall2016/dsga1005csciga2569/home) to 
 ###Online recordings 
 Most of the lectures and labs' videos will be posted to NYU Classes. Note, however, that class attendance is required.
 
-## (Tentative) Schedule
-
-#### The first lab is Wednesday *this week*, Weds. 9/7.
-
+##Schedule
 | Week        | Lecture Date           | Topic       |  Reference          |  Deliverables  |
 | ---------------|----------------| ------------|---------------------|---------------|
-| 2 | 9/12  | **Lec1** Intro and Logistics. Bayesian Networks.  |      | PS1, due 9/19 |
+| 2 | 9/12  | **Lec1** Intro and Logistics. Bayesian Networks. [Slides](slides/lecture1.pdf) |      | PS1, due 9/19 |
 | 3 | 9/19  | **Lec2** Undirected Graphical Models. Markov Random Fields. Ising Model. Applications to Statistical Physics. | |  PS2, due 9/26 |
 | 4 | 9/26 | **Lec3** Introduction to Inference. Exact Inference. Gibbs Sampling. |   | PS3, due 10/3 |
 | 5 | 10/3 | **Lec4** Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics].  |  | PS4, due 10/17, Project Proposal, due 10/24 |
