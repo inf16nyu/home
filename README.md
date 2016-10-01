@@ -19,7 +19,7 @@ Monday, 5:10-7:00pm, in Warren Weaver Hall 1302
 Wednesdays, 7:10-8:00pm in [Meyer Hall of Physics](http://physics.as.nyu.edu/object/physics.directions) 121 
 
 ###Office hours
-DS: Mondays, 10:00-11:00am. Location: 60 5th ave, 6th floor, room 613.
+DS: Mondays, 10:00-11:00am. Location: 60 5th ave, 6th floor, room 620 (small conference room).
 
 JB: Thursdays, 4:00-5:00pm. Location: 60 5th ave, 6th floor, room 612.
 
@@ -37,8 +37,8 @@ Most of the lectures and labs' videos will be posted to NYU Classes. Note, howev
 | ---------------|----------------| ------------|---------------------------------|---------------|
 | 2 | 9/12  | **Lec1** Intro and Logistics. Bayesian Networks. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture1.pdf) | Murphy [Chapter 1](http://www.cs.ubc.ca/~murphyk/MLbook/pml-intro-22may12.pdf) (optional; review for most)<br /><br />[Notes on Bayesian networks](https://people.eecs.berkeley.edu/~jordan/prelims/chapter2.pdf) (Sec. 2.1)<br /><br />[Algorithm for d-separation](http://pgm.stanford.edu/Algs/page-75.pdf) (optional)| [PS1](https://github.com/inf16nyu/home/blob/master/hw/ps1.pdf), due 9/19 |
 | 3 | 9/19  | **Lec2** Undirected Graphical Models. Markov Random Fields. Ising Model. Applications to Statistical Physics. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture2.pdf) |[Notes on MRFs](https://people.eecs.berkeley.edu/~jordan/prelims/chapter2.pdf) (Sec. 2.2-2.4)<br /><br /> [Notes on exponential families](https://people.eecs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf) |  [PS2](https://github.com/inf16nyu/home/blob/master/hw/ps2/ps2.pdf) \[[data](https://github.com/inf16nyu/home/blob/master/hw/ps2/text_data.csv)\], due 9/26 |
-| 4 | 9/26 | **Lec3** Introduction to Inference. Exact Inference. Gibbs Sampling. | Murphy [Sec. 20.3](http://site.ebrary.com/lib/nyulibrary/reader.action?ppg=745&docID=10597102&tm=1474470463032)<br /><br /> [Notes on variable elimination](https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf) (optional)<br /><br /> Barber [27.1-27.3.1](http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/181115.pdf)<br /><br />Murphy [Sec. 24.1-24.2.4](http://site.ebrary.com/lib/nyulibrary/reader.action?ppg=868&docID=10597102&tm=1474471957223)  | PS3, due 10/3 |
-| 5 | 10/3 | **Lec4** Modeling Text Data. Topic Models. Latent Dirichlet Allocation. [Bayesian Non-parametrics].  | [Introduction to Probabilistic Topic Models](http://www.cs.princeton.edu/~blei/papers/Blei2011.pdf) | PS4, due 10/17, Project Proposal, due 10/24 |
+| 4 | 9/26 | **Lec3** Introduction to Inference. Variable elimination. [Slides](https://github.com/inf16nyu/home/blob/master/slides/lecture3.pdf) | Murphy [Sec. 20.3](http://site.ebrary.com/lib/nyulibrary/reader.action?ppg=745&docID=10597102&tm=1474470463032)<br /><br /> [Notes on variable elimination](https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf) (optional)  | [PS3](https://github.com/inf16nyu/home/blob/master/hw/ps3/ps3.pdf) \[[data](https://github.com/inf16nyu/home/blob/master/hw/ps3/ps3_data.zip)\], due 10/3 |
+| 5 | 10/3 | **Lec4** Modeling Text Data. Topic Models. Latent Dirichlet Allocation. Gibbs sampling.  | Barber [27.1-27.3.1](http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/181115.pdf)<br /><br />Murphy [Sec. 24.1-24.2.4](http://site.ebrary.com/lib/nyulibrary/reader.action?ppg=868&docID=10597102&tm=1474471957223) <br /><br />[Introduction to Probabilistic Topic Models](http://www.cs.princeton.edu/~blei/papers/Blei2011.pdf) | PS4, due 10/17, Project Proposal, due 10/24 |
 | 6 | 10/10 |  No lecture (there *is* lab). |  |  | 
 | 7 |  10/17 | **Lec5** Modeling Survey Data. Factor Analysis. PCA. Expectation-Maximization (EM) Algorithm. |  |  PS5, due 10/24 |
 | 8 | 10/24 | **Lec6** Approximate Inference. Markov Chain Monte-Carlo (MCMC). |  |   | 
