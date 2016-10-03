@@ -27,14 +27,14 @@
   - Bruna et al, Super-Resolution with Deep Convolutional Sufficient Statistics, ICLR 2016.
   - Belanger et. al, Structured Prediction Energy Networks, ICML 2016
 
-** Theory **
+**Theory**
   - D.Wang et al. Efficient Observation Selection in Probabilistic Graphical Models Using Bayesian Lower Bounds, UAI 2016
   - Guy Bresler, Mina Karzand. Learning a Tree-Structured Ising Model in Order to Make Predictions, 2016.
 
-** Time Series **
+**Time Series**
 
 
-** Natural Language Processing **
+**Natural Language Processing**
   - A. Joulin et al, (Bag-of-tricks for efficient text classification)[https://arxiv.org/abs/1607.01759], 2016.
   
 
