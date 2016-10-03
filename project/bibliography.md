@@ -14,9 +14,9 @@
   - T. Jaakkola, D. Sontag, A. Globerson, M. Meila. Learning Bayesian Network Structure using LP Relaxations. 13th International Conference on Artificial Intelligence and Statistics (AI-STATS), 2010.
 
 **Deep generative models**
-  -K. Gregor et al, [Towards Conceptual Compression](https://arxiv.org/abs/1604.08772), NIPS, 2016. 
-  -D. Kingma et al, [Improving Variational Inference with Inverse Autoregressive Flow](https://arxiv.org/abs/1606.04934), NIPS 2016.
-  -R. Krishnan, U. Shalit, D. Sontag. Deep Kalman Filters, arXiv:1511.05121 Preprint, 2015.
+  - K. Gregor et al, [Towards Conceptual Compression](https://arxiv.org/abs/1604.08772), NIPS, 2016. 
+  - D. Kingma et al, [Improving Variational Inference with Inverse Autoregressive Flow](https://arxiv.org/abs/1606.04934), NIPS 2016.
+  - R. Krishnan, U. Shalit, D. Sontag. Deep Kalman Filters, arXiv:1511.05121 Preprint, 2015.
 
 **(Deep) structured prediction (not exhaustive; see references to/from these articles too)**
   - van den Oord et al, [Conditional Image Generation with PixelCNN Decoders](https://arxiv.org/abs/1606.05328) NIPS 2016.
