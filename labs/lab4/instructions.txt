@@ -1,0 +1,21 @@
+Rahul G. Krishnan (rahul@cs.nyu.edu)
+
+Installation instructions for pyugm:
+
+1] First clone the repository locally: 
+
+git clone https://github.com/dirko/pyugm.git
+pip install seaborn #you will need this for visualizations
+
+2] Install the repository:
+cd pyugm
+python setup.py install --user
+cd examples/
+
+3] Run: ipython notebook and open the ipynb file 
+ipython trust Loopy\ belief\ propagation\ example.ipynb
+ipython notebook
+
+Follow the instructions here if you're having 
+trouble running the 
+notebook: http://stackoverflow.com/questions/38517887/why-does-jupyter-display-none-not-found
