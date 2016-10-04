@@ -78,9 +78,6 @@ Problem Set 4: Gibbs sampling
 $(X_1, X_2, \ldots, X_N)$, where $X_i \sim \mbox{Cat}(\theta)$ for each $i$ 
 (thus the $X_i$ are conditionally independent of one another given
 $\theta$). 
-%\footnote{We are using the book's definition of the Multinomial
-%distribution, given on page 20, which Wikipedia calls the Categorical
-%distribution.}
 Show that the posterior $\Pr(\theta \mid x_1, \ldots, x_N, \alpha)$ is given by $\mbox{Dir}(\alpha')$, where
 \[
 \alpha'_k = \alpha_k + \sum_{i=1}^N 1[x_i = k].
@@ -106,7 +103,7 @@ This is called {\em Bayesian} prediction because we put a prior distribution ove
 
 \item 
 Latent Dirichlet allocation (LDA) is a probabilistic model for discovering topics in
-sets of documents \cite{blei2003latent}.  The generative model is as follows: %Simplifying slightly, the model is defined by the following steps:
+sets of documents \cite{blei2003latent}.  The generative model is as follows:
 \begin{itemize}
   \itemsep 5pt
   \item For each document, $m = 1, \ldots, M$
@@ -124,9 +121,7 @@ where $p(\theta | \alpha)$ is a Dirichlet distribution, and where $p(z |
 $\alpha$ and $\beta$ as fixed hyperparameters.
 Note that $\beta$ is a matrix, with one column per topic, and the
 Multinomial variable $z_{mn}$ selects one of the columns of $\beta$ to yield
-multinomial probabilities for $w_{mn}$. % (See the paper
-%``Latent Dirichlet allocation'' on the course website for more details if
-%needed).
+multinomial probabilities for $w_{mn}$. 
 
 
 \begin{figure}[t]
@@ -177,15 +172,6 @@ not just the final formulas.
   $\theta_m$; here we assume that $\beta$ is known) and are now only sampling ${\bf z}$. Again, you must
   hand in your full derivation.
 
-%\item Derive a mean-field algorithm for inference in the LDA model by
-%minimizing the KL-divergence $D(q_{\gamma_m,\phi_m}(\theta, {\bf z}) || p(\theta, {\bf z} \mid {\bf w}))$ with respect to the variational parameters $\phi$ and $\gamma$, where $q_{\gamma, \phi}(\theta, {\bf z}) = q_\gamma(\theta) \prod_n q_{\phi_n}(z_n)$, 
-%$q_\gamma(\theta)$ is a  Dirichlet, and the $q_{\phi_n}(z_n)$ are Multinomial.
-
-%For this question only, it is permissible to consult external
-%resources -- such as the LDA paper \cite{blei2003latent} -- to help
-%you figure out the derivation (please cite any sources you used).  In particular, you will probably want to use the fact that:
-%\[ \mbox{E}_{q_\gamma}\left[\log\theta_i\right] = \Psi(\gamma_i) - \Psi(\sum_{j=1}^k \gamma_j) \]
-
 \item 
 Implement both of the inference algorithms that you derived. You will then run your algorithms to find the posterior topic distribution $\theta$ for an input document.
 
@@ -217,8 +203,6 @@ E[\theta_i] = \frac{T\alpha_i + \sum_{t=1}^T\sum_{n=1}^N 1[z^t_{n} = i]}{T(\sum_
 \]
 
 \item Plot the $\ell_2$ error on your estimate of $E[\theta]$ as a function of the number of iterations for each of the algorithms.
-
-%\item Which algorithm converges fastest?  Do all algorithms return an accurate estimate of $E[\theta_m]$ when run for a sufficiently long time? Explain your answers.
 
 \end{enumerate}
 
