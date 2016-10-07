@@ -1,0 +1,188 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,graphicx}
+%\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{hyperref}
+\usepackage{url}
+
+% Example definitions.
+% --------------------
+\def\x{{\mathbf x}}
+\def\L{{\cal L}}
+
+\newcommand {\MEL} {{\mathrm{M}}}
+\newcommand {\R} {{\mathbb{R}}}
+\newcommand {\Z} {{\mathbb{Z}}}
+\newcommand {\E} {{\mathbb{E}}}
+\newcommand {\om} {{\omega}}
+\newcommand {\la} {{\lambda}}
+\newcommand {\La} {{\Lambda}}
+\newcommand{\hS}{\widehat S}
+\newcommand {\ga} {{\gamma}}
+\newcommand {\ld} {{\bf l^2}}
+\newcommand {\MFSC} {{\rm MFSC}}
+\newcommand {\oS} {{\overline S}}
+\newcommand {\lau} {{\lambda_1}}
+\newcommand {\lad} {{\lambda_2}}
+\newcommand {\lam} {{\lambda_m}}
+\newcommand {\Omu} {{\Omega_1}}
+\newcommand {\Omd} {{\Omega_2}}
+\newcommand {\Omm} {{\Omega_m}}
+\newcommand {\omu} {{\omega_1}}
+\newcommand {\omd} {{\omega_2}}
+\newcommand {\omm} {{\omega_m}}
+\newcommand {\quef} {{q}}
+\newcommand {\quefu} {{q_1}}
+\newcommand {\quefd} {{q_2}}
+\newcommand {\lat} {{\lambda_3}}
+\newcommand {\cP} {{\cal P}}
+\newcommand {\cPP} {{\cal P}}
+\newcommand {\bV} {{\bf V}}
+\newcommand {\C} {{\mathbb C}}
+\newcommand {\N} {{\mathbb N}}
+\newcommand {\mm} {{l}}
+\newcommand {\tS} {{\widetilde{S}}}
+\newcommand {\Ufreq} {{U^{\mathrm{fr}}}}
+\newcommand {\Sfreq} {{S^{\mathrm{fr}}}}
+\newcommand {\freq} {{{\mathrm{fr}}}}
+\newcommand{\eqdist}{\stackrel{d}{=}}
+\newcommand{\Exp}[1]{\mathbf{E}\left(#1 \right)}
+\newcommand{\var}[1]{\text{var}\left(#1 \right)}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{df}{Definition}
+
+% Title.
+% ------
+\title{Inference and Representation, Final Project}
+\author{Proposal Due 10/24 by Email \\
+Report Due 12/16}
+
+
+\begin{document}
+\maketitle
+
+\begin{itemize}
+\item The course final project must be done in groups of exactly 2
+  registered students, no exceptions.
+
+\item The final project can take any of the following forms:
+\begin{enumerate}
+\item In-depth review of one or several recent papers related to some of the contents of the class,
+\item Open-Source, high-quality software implementation of one or several algorithms related to the class that currently is not publicly available,
+\item New application of a machine learning model to a particular dataset and to a specific scientific question,
+\item Research project that addresses a machine learning method or a theoretical question. The research project can have a scope outside the course, e.g. it could be the seed for a longer research project.
+\end{enumerate}
+
+% be either in the form of an in-depth review of a recent article, or developing a research project, with a specific scientific question that is addressed using tools developed in class. 
+
+\item If the project concerns an application, these are some guidelines that may help when it comes to choosing the dataset and the question:
+\begin{itemize}
+\item Not too small (at least $100$ observations).
+\item If you study a time-series, it should be approximately stationary, or made easily stationary by appropriate transformations.
+\item Unique! Try to find a dataset/question that particularly interests you. 
+\item Have a look at the course syllabus. The project can be grounded on techniques that have not yet been covered in class but that will be in the upcoming lectures.
+\end{itemize}
+
+\item \textbf{Proposal}: Write a 1-2 page proposal that details the question you are planning to address, which dataset are you planning to use and how it will be processed, which family of machine learning algorithms will be applied, and how are these methods going to be evaluated.  Email the proposal to \texttt{apm470@nyu.edu} and \texttt{anv273@nyu.edu}. We will try to give constructive feedback on your proposal before spending time on the analysis. 
+ 
+ \item \textbf{Note}: if you are interested in Natural Language Processing applications and are also taking ``Natural Language Processing with Distributed Representations" by Prof. Sam Bowman, we are open to the idea of a larger, common final project. The proposal will need to be approved by all parties. 
+
+%\item \textbf{Report}: The report should comprise the following items:
+%\begin{itemize}
+%\item Data description: where it comes from, what it represents.
+%\item Precise questions the analysis will try to answer.
+%\item Visual inspection of the data: plot, ACF, PACF, Spectral density...
+%\item A parametric model of your choice, and some analysis of the residuals to assess the fit.
+%\item A discussion on the results of your task (forecasting, hypothesis testing, etc.).
+%\end{itemize}
+
+\item \textbf{Some resources}: We have created a page with some resources and bibliography that you may use as inspiration for your project: \url{https://docs.google.com/document/d/1Ywj99qfrJO6g7CU3qi0Gar93GqaqhfTK6lLHiyJVwew/edit?usp=sharing}. It will be updated in the upcoming days.
+%see .
+
+%see \url{https://github.com/inf16nyu/home/blob/master/project/bibliography.md}.
+
+%with plenty of available dataset. However, we encourage you to find on your own field of interest/expertise. 
+%\begin{itemize}
+%\item \url{http://cs.nyu.edu/~dsontag/courses/ml16/assignments/projects.html} contains a list of links to publicly available datasets.
+%\item \url{https://wrds-web.wharton.upenn.edu/wrds/}: Financial data (requires access, talk to Joan B. if you are interested).
+%\item Yahoo Finance
+%\item World DataBank \url{http://databank.worldbank.org/data/home.aspx}: Socio-economic indicators. 
+%\end{itemize}
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+%(Problem 1.8) Consider the model 
+%$$X_t = \delta + X_{t-1} + W_t~,$$
+%for $t=1, 2\dots$ with $X_0=0$, and where $W_t$ is a white noise with variance $\sigma^2$.
+%\begin{enumerate}
+%\item Plot samples of $X_t$ by simulation, by picking $\delta=0$ and $\delta \neq 0$. Interpret.
+%\item Show that the model is equivalent to $X_t = \delta t + \sum_{i \leq t} W_i$.
+%\item Find the mean and autocovariance of $X_t$. Is the process stationary? 
+%\item Suggest a transformation to make the series stationary, and prove that the resulting series is indeed stationary. 
+%\end{enumerate}
+%\item  {[5pts]} Let $U_1$, $U_2$ be uncorrelated random variables with zero mean and variance $\sigma^2$. Let 
+%$$X_t = U_1 \sin( 2 \pi \omega_1 t) + U_2 \cos(2 \pi \omega_1 t)~.$$
+%\begin{enumerate}
+%\item What sort of phenomena is $X_t$ appropriate for? 
+%\item Show that $X_t$ is weakly stationary, and compute its autocovariance and autocorrelation. 
+%\item Consider now a second $\omega_2 \neq \omega_1$, $V_1, V_2$ uncorrelated and also uncorrelated 
+%from $U_1, U_2$, and $$\tilde{X}_t =  V_1 \sin( 2 \pi \omega_2 t) + V_2 \cos(2 \pi \omega_2 t)~.$$
+%Show that $Y_t = X_t + \tilde{X}_t$ is weakly stationary and compute its autocovariance. 
+%\item If $X_t$ and $Y_t$ are weakly stationary, is it true that $Z_t = X_t + Y_t$ is always weakly stationary? Can you find a counter-example? {\it (Hint: consider a white noise $X_t$ and try to build $Y_t$ by reshuffling things...)}
+%\end{enumerate}
+%\pagebreak
+%\item   {[5pts] }
+%\begin{enumerate}
+%\item Let $X_t$ be a Gaussian process. Show that if $X_t$ is weakly stationary, then it is strictly stationary.
+%\item Give an example of a time series $Y_t$ weakly stationary, but not strictly stationary.
+%\item Show that if $X_t$ is strictly stationary, then $Y_t = h(X_t)$ is strictly stationary for any continuous transformation $h$.
+%\item Is the same true if we replace `strictly' with `weakly' in the previous question? If so, prove it; otherwise, give a counter-example. {\it (Hint: you can think about different distributions having the same first and second-order moments)}
+%\end{enumerate}
+%%\item In this question we collect numerical evidence to verify Property 1.1 from your textbook: 
+%\item  {[5pts]} The \texttt{jj} dataset in the \texttt{astsa} package records the quarterly earnings per share for Johnson \& Johnson from 1960 to 1981. You can plot the time series in \texttt{R} with \texttt{library(astsa); plot(jj)}.
+%\begin{enumerate}
+%\item Do you think the series is weakly stationary?  Provide numerical evidence to support your answer. 
+%\item Let $x_t$ be the Johnson \& Johnson series and let $y_t = x_{t+1}/x_{t}$.  Calculate and plot $y_t$ (you may find the \texttt{lag()} function helpful).
+%\item Calculate and plot the sample autocorrelation function of $y_t$; do not use a builtin function or library to calculate autocorrelation function. Do you think $y_t$ is weakly stationary? 
+%\item Plot $z = (y_1, y_5, y_9, \ldots, y_{1+4i}, \ldots)$. Does this series look weakly stationary?
+%\end{enumerate}
+%
+%
+%
+%\end{enumerate}
+
+
+
+\end{document}

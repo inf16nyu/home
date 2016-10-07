@@ -1,0 +1,222 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[usenames]{color}
+\usepackage{url}
+\usepackage{courier}
+
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+\newcommand{\widgraph}[2]{\includegraphics[keepaspectratio,width=#1]{#2}}
+\pagestyle{empty} \addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.5in} \addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\newcommand{\ruleskip}{\bigskip\hrule\bigskip}
+\newcommand{\nodify}[1]{{\sc #1}} \newcommand{\points}[1]{{\textbf{[#1
+points]}}}
+\newcommand{\bitem}{\begin{list}{$\bullet$}%
+{\setlength{\itemsep}{0pt}\setlength{\topsep}{0pt}%
+\setlength{\rightmargin}{0pt}}} \newcommand{\eitem}{\end{list}}
+\newcommand{\comment}[1]{}
+\newcommand{\true}{\mbox{true}}
+\newcommand{\Parents}{\mbox{Parents}}
+\newcommand{\eat}[1]{}
+\newcommand{\CInd}[3]{({#1} \perp {#2} \mid {#3})}
+\newcommand{\Ind}[2]{({#1} \perp {#2})}
+\setlength{\parindent}{0pt} \setlength{\parskip}{0.5ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagestyle{myheadings} \markboth{}{DS-GA-1005/CSCI-GA.2569 Problem Set 4}
+
+{\LARGE 
+\begin{center}Inference and Representation, Fall 2016\end{center}
+}
+
+{\Large
+Problem Set 4: Gibbs sampling
+}
+
+{\bf Due: Monday, October 17, 2016 at 3pm} (uploaded to Gradescope/NYU Classes.)\\
+
+{\bf Your submission should include a PDF file called ``solutions.pdf''
+  with your written solutions, separate output files, and all of the
+  code that you wrote.}
+
+{\em {\bf Important:} See problem set policy on the course web site.}
+\ruleskip
+
+
+\newcommand{\eparam}{\ensuremath{\eta}}
+\newcommand{\meanpar}{\ensuremath{\mu}}
+\newcommand{\Exs}{\ensuremath{\mathbb{E}}}
+\newcommand{\bksl}{\ensuremath{\backslash}}
+\newcommand{\mprob}{\ensuremath{\mathbb{P}}}
+\newcommand{\indmark}{\ensuremath{\perp}}
+\newcommand{\graph}{\ensuremath{G}}
+\newcommand{\vertex}{\ensuremath{V}}
+\newcommand{\estim}[1]{\ensuremath{\widehat{#1}}}
+\newcommand{\myxsam}[1]{\ensuremath{x_{#1}}}
+\newcommand{\myysam}[1]{\ensuremath{y_{#1}}}
+\newcommand{\ypred}[1]{\ensuremath{\widetilde{y}^{(#1)}}}
+
+\def\b{\backslash}
+
+\def\child{\xi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}
+\item {\bf Conjugacy and Bayesian prediction} (generalization of
+  Bernoulli example from Murphy 9.2.5.5):
+\begin{enumerate}
+\item Let $\theta \sim \mbox{Dir}(\alpha)$. Consider discrete random variables 
+$(X_1, X_2, \ldots, X_N)$, where $X_i \sim \mbox{Cat}(\theta)$ for each $i$ 
+(thus the $X_i$ are conditionally independent of one another given
+$\theta$). 
+Show that the posterior $\Pr(\theta \mid x_1, \ldots, x_N, \alpha)$ is given by $\mbox{Dir}(\alpha')$, where
+\[
+\alpha'_k = \alpha_k + \sum_{i=1}^N 1[x_i = k].
+\]
+This property, that the posterior distribution $\Pr(\theta \mid {\bf
+  x})$ is in the same family as the prior distribution $\Pr(\theta)$,
+is called {\em conjugacy}. The Dirichlet distribution (see
+Murphy Sec. 2.5.4) is the {\em conjugate prior} for the Categorical distribution. Every distribution in the exponential family has a conjugate prior. For example, the conjugate prior for the mean of a Gaussian distribution can be shown to be another Gaussian distribution.
+% TODO: If the homework were longer, I would introduce the general form of a conjugate prior for a distribution in the exponential family and have the students derive the Dirichlet as the conjugate prior for the multinomial.
+
+\item Now consider a random variable $X_{\mbox{\rm new}} \sim \mbox{Cat}(\theta)$ 
+that is assumed conditionally independent of $(X_1, X_2, \ldots, X_N)$ 
+given $\theta$.  Compute:
+\[
+p(x_{\mbox{\rm new}} \mid x_1, x_2, \ldots, x_N, \alpha)
+\]
+by integrating over $\theta$.\\
+
+{\em Hint}: Your result should take the form of a ratio of gamma functions.\\
+
+This is called {\em Bayesian} prediction because we put a prior distribution over the parameters $\theta$ (in this case, a Dirichlet) and are thus able to take into consideration our initial uncertainty over (and prior knowledge of) the parameters together with the evidence we observed (samples $x_1, \ldots, x_N$) when giving our predictions for $x_{\mbox{\rm new}}$.
+\end{enumerate}
+
+\item 
+Latent Dirichlet allocation (LDA) is a probabilistic model for discovering topics in
+sets of documents \cite{blei2003latent}.  The generative model is as follows:
+\begin{itemize}
+  \itemsep 5pt
+  \item For each document, $m = 1, \ldots, M$
+    \begin{enumerate}
+      \item Draw topic probabilities $\theta_m \sim p(\theta | \alpha)$
+      \item For each of the $N$ words:
+        \begin{enumerate}
+        \item Draw a topic $z_{mn} \sim p(z | \theta_m)$
+        \item Draw a word $w_{mn} \sim p(w | z_{mn}, \beta)$,
+        \end{enumerate}
+    \end{enumerate}
+\end{itemize}
+where $p(\theta | \alpha)$ is a Dirichlet distribution, and where $p(z |
+\theta_m)$ and $p(w | z_{mn}, \beta)$ are Multinomial distributions.  Treat
+$\alpha$ and $\beta$ as fixed hyperparameters.
+Note that $\beta$ is a matrix, with one column per topic, and the
+Multinomial variable $z_{mn}$ selects one of the columns of $\beta$ to yield
+multinomial probabilities for $w_{mn}$. 
+
+
+\begin{figure}[t]
+\begin{center}
+  \widgraph{.5\textwidth}{lda}
+\caption{Graphical structure of the LDA model.}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+
+\item In this question you will use an off-the-shelf implementation of
+  LDA to get practice with learning topic models on real-world data,
+  and to analyze various trade-offs that can be made during
+  learning. 
+\begin{enumerate}
+\item Prepare a corpus of documents from which you'll learn. You can
+  find some already prepared text collections here:
+
+\begin{centering}\url{https://archive.ics.uci.edu/ml/datasets/Bag+of+Words}\end{centering}
+
+However, we prefer that you be creative and construct your own!
+
+\item Learn a latent Dirichlet allocation model on your corpus using
+  default parameters. You can use any software package that you like. Two excellent
+  options are:
+\begin{itemize}
+\item Mallet (\url{http://mallet.cs.umass.edu/})
+\item Gensim (\url{http://radimrehurek.com/gensim/})
+\end{itemize}
+Qualitatively describe what topics are discovered.
+
+\item Re-run learning using varying numbers of topics (e.g., 5, 20,
+  100). Describe qualitatively the differences that you observe 
+  as the number of topics increases.
+\end{enumerate}
+
+\item Derive a Gibbs sampler for the LDA model (i.e., write down the
+set of conditional probabilities for the sampler; see Sec. 24.2 of
+Murphy). To obtain full credit, you must hand in your full derivation,
+not just the final formulas.
+
+{\em You may find it helpful to refer to your solutions from question 1.}
+
+\item Derive a collapsed Gibbs sampler for the LDA model,
+  where you consider the marginal distribution $\Pr({\bf z}_m \mid
+  {\bf w}_m ; \alpha, \beta)$ (integrating out {\em just} the topic probabilities
+  $\theta_m$; here we assume that $\beta$ is known) and are now only sampling ${\bf z}$. Again, you must
+  hand in your full derivation.
+
+\item 
+Implement both of the inference algorithms that you derived. You will then run your algorithms to find the posterior topic distribution $\theta$ for an input document.
+
+We have previously learned the parameters (i.e., $\alpha$ and $\beta$) of a 200-topic LDA model on a corpus containing thousands of abstracts of papers from the top machine learning conference, Neural Information Processing Systems (NIPS). Your task will be to infer the topic distribution for a new document.
+
+We have provided the following data files:
+\begin{itemize}
+      \item \texttt{alphas.txt}, which has on each line for topic $i$: $i$, $\alpha_i$, and a list of the most likely words for this topic,
+      \item \texttt{abstract\_*.txt}, with the words of document $m$ (i.e., the abstract),
+      \item \texttt{abstract\_*.txt.ready}, with, in order,
+      \begin{itemize}
+           \item the number of topics $k$,
+           \item $\alpha_i$, for $i = 1, \ldots, k$,
+           \item for every word $w_n$, the word itself followed by $\beta_{w_n,i}$ 
+           for $i = 1, \ldots, k$.
+      \end{itemize}
+\end{itemize}
+Note that your code only needs to read in the \texttt{abstract\_*.txt.ready} files -- the \texttt{alphas.txt} and \texttt{abstract\_*.txt} files are provided for your reference only.
+
+It is common with MCMC methods to discard the first $X$ samples to avoid using samples that are highly correlated with the arbitrary starting assignment (this is called ``burning in''). Use $X=50$ for your Gibbs sampling implementations.
+
+For each of the abstracts,
+\begin{enumerate}
+\item Use your code to generate an accurate estimate of $E[\theta]$ using collapsed Gibbs sampling with a high number of iterations (e.g. $10^4$). Use this as ground truth. % for answering the subsequent questions.
+
+The following formula can be used to obtain an estimate of $\theta$ from the collapsed Gibbs sampler (where $T$ is the number of samples):
+\[
+E[\theta_i] = \frac{T\alpha_i + \sum_{t=1}^T\sum_{n=1}^N 1[z^t_{n} = i]}{T(\sum_{\hat{i}=1}^k \alpha_{\hat{i}} + N)}
+\]
+
+\item Plot the $\ell_2$ error on your estimate of $E[\theta]$ as a function of the number of iterations for each of the algorithms.
+
+\end{enumerate}
+
+{\bf Only include in your solutions the plot for the data file} \texttt{NIPS2008\_0517}. The remaining files are provided for your own experimentation.
+
+You may use the programming language of your choice. We recommend first checking that packages are available to (1) sample from a Dirichlet distribution, and (2) compute the Digamma function $\Psi(x)$, as these will simplify your coding. For example, see Python's \texttt{numpy.random.mtrand.dirichlet} and \texttt{scipy.special.psi}.
+
+\end{enumerate}
+\end{enumerate}
+
+\bibliographystyle{plain}
+\bibliography{../refs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
