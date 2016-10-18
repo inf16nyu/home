@@ -20,6 +20,7 @@ points]}}}
 
 \newcommand{\G}{\mathcal{G}}
 \newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
 
 %\newcommand{\bE}{\mbox{\boldmath $E$}}
 %\newcommand{\be}{\mbox{\boldmath $e$}}
@@ -59,7 +60,7 @@ points]}}}
 }
 
 {\Large
-Problem Set 5: EM \& Factor Analysis
+Problem Set 5: PCA \& Factor Analysis
 }
 
 
@@ -122,48 +123,52 @@ Recall that the covariance and correlation of two random variables $X_i$, $X_j$ 
 $$\sigma_{i,j} = \E( (X_i - \E X_i)(X_j - \E X_j))~,~\tilde{\sigma}_{i,j} = \frac{\sigma_{i,j}}{\sqrt{\sigma_{i,i} \sigma_{j,j}}}~.$$
 \begin{enumerate}
 \item Show that $-1 \leq \tilde{\sigma}_{ij} \leq 1$.
-\item Show the relationship between Factor Analysis applied to the covariance matrix $\Sigma$ of $X$ and the corresponding Factor Analysis applied to the correlation matrix $\tilde{\Sigma}$ of $X$. Do you obtain the same relationship than Principal Component Analysis? 
-\item Construct an example (A) with three random variables exhibiting some correlation, such that the leading principal component fails to detect that correlation but the leading factor analysis direction does, and an example (B) where the detected principal component aligns better with the underlying factor than the leading factor analysis direction.
-
+\item Show how Factor Analysis applied to the covariance matrix $\Sigma$ of $X$ and the corresponding Factor Analysis applied to the correlation matrix $\tilde{\Sigma}$ of $X$ are related. Interpret this result. Does the same phenomena hold 
+if you apply PCA to $\Sigma$ and  $\tilde{\Sigma}$? 
+\item Construct an example with three random variables exhibiting some correlation, such that the leading principal component fails to detect that correlation, but the leading factor analysis direction does recover it. ({\it Hint:} Construct data such that one variable is scaled differently from the rest, and use the previous result. )
+\item Construct an example where the factor analysis method fails to reveal the true correlation structure of the data, but PCA is robust. ({\it Hint:} Think what happens when there is weak or absent correlation).
+\item Consider the centered Factor Analysis model $X = AY + \epsilon$, with $X=(X_1,\dots, X_L)$ and $J < L$ uncorrelated factors $Y=(Y_1,\dots,Y_J)$, where $\E(\epsilon_i)=0$, $\text{var}(\epsilon_i) = \beta_i$. 
+ Write down the joint data likelihood of the model when both $Y$ and $\epsilon$ are jointly Gaussian, and specify the loss that dictates how to obtain the parameters of the model ($A \in \R^{N \times L}$ and $\beta \in \R^L$) via MLE. 
+\item Are the parameters of the model uniquely specified? Justify your answer.
+\item If one supposes that $\beta_i = \beta_0$ for $i=1\dots L$, give an algorithm to estimate the MLE parameters in that case.
 \end{enumerate}
 
 
-
-\item 
-% From Berkeley, A_hw5_Fa11.tex
-%\begin{center}{\bf \large  HMM with mixture model emissions}\end{center}
-
-A common modification of the hidden Markov model involves using mixture models for the
-emission probabilities $p(\yy_t | q_t)$, where $q_t$ refers to the state for time $t$ and $\yy_t$ to the observation for time $t$.
-
-Suppose that ${\bf y}_t \in \real^n$ and that the emission distribution is given by a mixture of Gaussians for each value of the state. To be concrete, suppose that the $q_t$ can take $K$ discrete states and each mixture has $M$ components. Then,
-\[
-p({\bf y}_t \mid q_t) = \sum_{j=1}^M b_{q_t j}
-\left(\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma_{q_t j}|^{\frac{1}{2}}}
-\exp\left\{-\frac{1}{2}({\bf y}_t-\mu_{q_t j})^T\Sigma_{q_t j}^{-1}({\bf y}_t-\mu_{q_t j})
-\right\}\right)
-\]
-where ${\bf b}_i \in [0,1]^M$ denotes the mixing weights for state $i$ ($\sum_{j=1}^M b_{ij} = 1$ for $i=1,\ldots K$), $\mu_{ij} \in  \real^n$ and $\Sigma_{ij} \in  \real^{n\times n}$.
-
-Let $\pi \in \real^K$ be the probability distribution for the initial state $q_0$,
-and $A \in \real^{K \times K}$ be the transition matrix of the $q_t$'s.
-In this problem you will derive an EM algorithm for learning the parameters $\{ b_{ij}, \mu_{ij}, \Sigma_{ij} \}$ and $A, \pi$.
-
-\begin{enumerate}
-\item The EM algorithm is substantially simpler if you introduce auxiliary variables $z_t\in \{1, \ldots, M\}$ denoting which mixture component the $t$'th observation is drawn from.
-
-Draw the graphical model for this modified HMM, identifying
-  clearly the additional latent variables that are needed.
-\item Write the expected complete log likelihood for the model
-  and identify the expectations that you need to compute in the E
-  step. {\em Show all steps of your derivation.}
-
-\item Give an algorithm for computing the E step.
-
-{\em Hint: Reduce the inference problem to something you know how to do, such as sum-product belief propagation in tree-structured pairwise MRFs.}
-
-\item Write down the equations that implement the M step.
-\end{enumerate}
+%\item 
+%% From Berkeley, A_hw5_Fa11.tex
+%%\begin{center}{\bf \large  HMM with mixture model emissions}\end{center}
+%
+%A common modification of the hidden Markov model involves using mixture models for the
+%emission probabilities $p(\yy_t | q_t)$, where $q_t$ refers to the state for time $t$ and $\yy_t$ to the observation for time $t$.
+%
+%Suppose that ${\bf y}_t \in \real^n$ and that the emission distribution is given by a mixture of Gaussians for each value of the state. To be concrete, suppose that the $q_t$ can take $K$ discrete states and each mixture has $M$ components. Then,
+%\[
+%p({\bf y}_t \mid q_t) = \sum_{j=1}^M b_{q_t j}
+%\left(\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma_{q_t j}|^{\frac{1}{2}}}
+%\exp\left\{-\frac{1}{2}({\bf y}_t-\mu_{q_t j})^T\Sigma_{q_t j}^{-1}({\bf y}_t-\mu_{q_t j})
+%\right\}\right)
+%\]
+%where ${\bf b}_i \in [0,1]^M$ denotes the mixing weights for state $i$ ($\sum_{j=1}^M b_{ij} = 1$ for $i=1,\ldots K$), $\mu_{ij} \in  \real^n$ and $\Sigma_{ij} \in  \real^{n\times n}$.
+%
+%Let $\pi \in \real^K$ be the probability distribution for the initial state $q_0$,
+%and $A \in \real^{K \times K}$ be the transition matrix of the $q_t$'s.
+%In this problem you will derive an EM algorithm for learning the parameters $\{ b_{ij}, \mu_{ij}, \Sigma_{ij} \}$ and $A, \pi$.
+%
+%\begin{enumerate}
+%\item The EM algorithm is substantially simpler if you introduce auxiliary variables $z_t\in \{1, \ldots, M\}$ denoting which mixture component the $t$'th observation is drawn from.
+%
+%Draw the graphical model for this modified HMM, identifying
+%  clearly the additional latent variables that are needed.
+%\item Write the expected complete log likelihood for the model
+%  and identify the expectations that you need to compute in the E
+%  step. {\em Show all steps of your derivation.}
+%
+%\item Give an algorithm for computing the E step.
+%
+%{\em Hint: Reduce the inference problem to something you know how to do, such as sum-product belief propagation in tree-structured pairwise MRFs.}
+%
+%\item Write down the equations that implement the M step.
+%\end{enumerate}
 
 
 \end{enumerate}
