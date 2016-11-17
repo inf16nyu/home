@@ -1,0 +1,168 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage{url}
+\usepackage[usenames]{color}
+
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+
+\pagestyle{empty} \addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.5in} \addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\newcommand{\ruleskip}{\bigskip\hrule\bigskip}
+\newcommand{\nodify}[1]{{\sc #1}} \newcommand{\points}[1]{{\textbf{[#1
+points]}}}
+
+\newcommand{\bitem}{\begin{list}{$\bullet$}%
+{\setlength{\itemsep}{0pt}\setlength{\topsep}{0pt}%
+\setlength{\rightmargin}{0pt}}} \newcommand{\eitem}{\end{list}}
+
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+
+%\newcommand{\bE}{\mbox{\boldmath $E$}}
+%\newcommand{\be}{\mbox{\boldmath $e$}}
+%\newcommand{\bU}{\mbox{\boldmath $U$}}
+%\newcommand{\bu}{\mbox{\boldmath $u$}}
+%\newcommand{\bQ}{\mbox{\boldmath $Q$}}
+%\newcommand{\bq}{\mbox{\boldmath $q$}}
+%\newcommand{\bX}{\mbox{\boldmath $X$}}
+%\newcommand{\bY}{\mbox{\boldmath $Y$}}
+%\newcommand{\bZ}{\mbox{\boldmath $Z$}}
+%\newcommand{\bx}{\mbox{\boldmath $x$}}
+%\newcommand{\by}{\mbox{\boldmath $y$}}
+%\newcommand{\bz}{\mbox{\boldmath $z$}}
+
+\newcommand{\true}{\mbox{true}}
+\newcommand{\Parents}{\mbox{Parents}}
+
+\newcommand{\ww}{{\bf w}}
+\newcommand{\xx}{{\bf x}}
+\newcommand{\pp}{{\bf p}}
+\newcommand{\vv}{{\bf v}}
+\newcommand{\yy}{{\bf y}}
+\newcommand{\real}{\ensuremath{\mathbb{R}}}
+%\newcommand{\R}{{\mathbb{R}}}
+
+\newcommand{\eat}[1]{}
+
+\newcommand{\CInd}[3]{({#1} \perp {#2} \mid {#3})}
+\newcommand{\Ind}[2]{({#1} \perp {#2})}
+
+\setlength{\parindent}{0pt} \setlength{\parskip}{0.5ex}
+
+\begin{document}
+
+\pagestyle{myheadings} \markboth{}{DS-GA-1005/CSCI-GA.2569 Problem Set 6}
+
+{\LARGE
+\begin{center}Inference and Representation, Fall 2016\end{center}
+}
+
+{\Large
+Problem Set 6: MCMC.
+}
+
+
+{\bf Due: Monday, November 21, 2016 at 11:59pm (as a PDF document uploaded in
+  Gradescope.)}\\
+
+{\em {\bf Important:} See problem set policy on the course web site.}
+\ruleskip
+
+%\vspace{0.2in}
+
+%\begin{enumerate}
+
+\section*{Hamiltonian Monte-Carlo} 
+This problem will explore Hamiltonian Dynamics as a tool 
+to enhance classic MCMC methods, in the so-called \emph{Hamiltonian Monte-Carlo (HMC)}. 
+%It is largely inspired by {\scriptsize
+%\url{https://theclevermachine.wordpress.com/2012/11/18/mcmc-hamiltonian-monte-carlo-a-k-a-hybrid-monte-carlo/}}. 
+
+The classical (non-relativistic) Lagrangian Mechanics describing the dynamics of $N$ particles in $\R^3$ with positions $x_1, \dots x_N$ and velocities $v_1, \dots v_N$, $v_i = \dot{x}_i$ is given, in absence of external forces, by 
+\begin{equation}
+\mathcal{L}(\vv, \xx) = \frac{1}{2} \langle \vv, M \vv \rangle - U(\xx)~,~\vv=(v_1, \dots, v_N) \in \R^{3N}, \xx=(x_1, \dots, x_N) \in \R^{3N}~,
+\end{equation} 
+where $M$ is a $3N \times 3N$ diagonal, positive matrix of the form $M = \text{diag}(m_1, m_1, m_1, \dots, m_N, m_N, m_N)$ describing
+the masses of the particles, and $U(\xx)$ is a potential energy term, that only depends upon position variables $\xx$.
+\begin{enumerate}
+\item Show that, for each fixed $\xx$, $\mathcal{L}(\vv, \xx)$ is convex with respect to $\vv$. 
+\end{enumerate}
+By using the fact that Lagrangian solutions are stationary points and the fact that 
+$\dot{\xx} = \vv$, we have that
+\begin{equation}
+\frac{\mathrm{d}}{\mathrm{d}t} \frac{\partial \mathcal{L}}{\partial \vv} = \frac{\partial \mathcal{L}}{\partial \xx}~.
+\end{equation}
+This is called the \emph{Euler-Lagrange} equation.
+
+The first step to understand HMC is to derive Hamiltonian mechanics from Lagrangian mechanics. For that purpose, we recall the notion of convex or Legendre-Fenchel conjugate: given a convex function $f: \Omega \to \R$ defined on a convex set $\Omega$, it is defined as 
+\begin{equation}
+f^*(p) = \sup_{y \in \Omega} \left( \langle y, p \rangle - f(y) \right)~.
+\end{equation}
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Show that $f^*$ is convex. {\it Hint: think about what happens if you take the maximum of two convex functions.}
+\item Using the fact that $\mathcal{L}$ is differentiable, show that the Legendre-Fenchel conjugate of $\mathcal{L}(\vv, \xx)$, for fixed $\xx$, has the form 
+\begin{equation}
+\label{hami}
+\mathcal{H}(\pp, \xx) = \frac{1}{2} \langle \pp, M^{-1} \pp \rangle + U(\xx)~,\text{ with } \pp = \frac{\partial \mathcal{L}}{\partial \vv}~.
+\end{equation}
+This is the \emph{Hamiltonian}, and is interpreted as the energy of the system in terms of position $\xx$ and momentum $\pp$.
+\end{enumerate}
+The Legendre duality also gives the crucial interpretation 
+of momentum variables $\pp$ as the partial derivatives of $\mathcal{L}$ with respect to velocity, and
+%\begin{equation}
+%~,\text{ and }~\vv = \frac{\partial \mathcal{H}}{\partial \pp}~,\text{ and}
+%\end{equation}
+\begin{equation}
+\mathcal{H}(\pp, \xx) = \langle \vv, \pp \rangle - \mathcal{L}(\vv,\xx)~.
+\end{equation}
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item Using the previous results, take the differential of $\mathcal{H}(\pp,\xx)$ with respect to time
+$$\frac{\mathrm{d} \mathcal{H}}{\mathrm{d}t} = \langle \frac{\partial \mathcal{H}}{\partial \pp}, \dot{\pp} \rangle + \langle \frac{\partial \mathcal{H}}{\partial \xx} ,\dot{\xx} \rangle $$
+and use the Euler-Lagrange equation to derive the \emph{Hamiltonian equations}:
+\begin{equation}
+\frac{\partial \mathcal{H}}{\partial \pp} = \dot{\xx}=\vv ~,~ \frac{\partial \mathcal{H}}{\partial \xx} = -\dot{\pp}~. 
+\end{equation}
+\end{enumerate}
+Now that we have derived the Hamiltonian Dynamics, we need an algorithm to implement them in a computer. 
+A popular strategy is the so-called \emph{Leap Frog} method. Given a stepsize $\delta > 0$, it consists in the following steps:
+\begin{itemize}
+\item Take a half-step to update the momentum variable: $$\pp( t + \delta/2) = \pp(t) - \frac{\delta}{2} \nabla_{\xx} \mathcal{H}(\pp(t), \xx(t))~.$$
+\item Take a full-step to update the position variable: $$\xx( t + \delta) = \xx(t) + \delta \nabla_{\pp} \mathcal{H}(\pp(t+\delta/2), \xx(t))~.$$
+\item Take the remaining half-step to update momentum: $$\pp( t + \delta) = \pp(t+\delta/2) - \frac{\delta}{2} \nabla_{\xx} \mathcal{H}(\pp(t+\delta/2), \xx(t+\delta))~.$$
+\end{itemize}
+The goal of Hamiltonian Monte-Carlo is to use Hamiltonian Dynamics to approximate expectations 
+on a given model of the form 
+\begin{equation}
+\label{blabla}
+p(\xx) = \frac{\tilde{p}(\xx)}{Z}~,
+\end{equation}
+ where $Z$ is the partition function. By denoting $U(\xx) = -\log p(\xx)$ , this is 
+ interpreted as the \emph{canonical} distribution of the system with energy $U(\xx)$. 
+\begin{enumerate}
+\setcounter{enumi}{4}
+\item If $U(\xx)$ in (\ref{blabla}) denotes the potential energy of the system, derive the canonical distribution in terms of $\xx$ and $\pp$ using the Hamiltonian, and conclude that the joint canonical distribution $p(\xx,\pp)$ is separable in $\xx$ and $\pp$, that is, $\xx$ and $\pp$ are independent: $p(\xx, \pp) = p(\xx) p(\pp)$. Explain how this property justifies using $\pp$ as auxiliary variables to sample from $p(\xx)$.
+\item Using (\ref{hami}), show that the marginal $p(\pp)$ is a Normal distribution with zero mean.
+\item Show that the leap-frog algorithm does not require knowledge of $Z$.
+\item Finally, let us consider the following proposal distribution. Given $\xx^{(0)}$, we 
+draw $\pp^{(0)} \sim p(\pp)$ and run 1 step of the Leapfrog algorithm with step $\delta$, to obtain
+$( \xx^{*}, \pp^{*})$. Denote by   
+\begin{equation}
+q( \xx^*, \pp^* ~|~ \xx^{(0)}, \pp^{(0)}) 
+\end{equation}
+the resulting distribution. Show that the Metropolis-Hastings algorithm using this proposal distribution produces samples from $p(\xx)$ when marginalizing over position variables. 
+\end{enumerate}
+
+
+
+%\item \emph{Time Series miscellanea}. 
+%
+%
+%\end{enumerate}
+
+\end{document}
