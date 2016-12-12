@@ -50,7 +50,7 @@ Most of the lectures and labs' videos will be posted to NYU Classes. Note, howev
 | 14 | 12/5 | **Lec11** Causal Inference. [slides](https://github.com/inf16nyu/home/blob/master/slides/lecture11.pdf) | Murphy Sec. 26.6 (learning causal DAGS) <br /> [Hill & Gelman](http://www.stat.columbia.edu/~gelman/arm/chap9.pdf) Ch. 9 ( p.167-175, 181-188) <br /> [ICML 2016 tutorial](http://www.cs.nyu.edu/~shalit/tutorial.html) (optional) <br /> [Jonas Peters causality book](http://www.math.ku.dk/~peters/jonas_files/scriptChapter1-4.pdf) (optional) |  |
 | 15 | 12/12 | **Lec12** Modeling Images and high-dimensional data. Boltzmann Machines. Autoencoders. Variational Autoencoders. |  |  |
 |  | 12/13  | **Lec13** Modeling Images and high-dimensional data (contd). Deep Auto-regressive Models. Generative Adversarial Networks (GANs). |  | Project writeup, due 12/16. |
-| 16 | 12/19 | **Final Day**  Poster Presentations of Final Projects | | |
+| 16 | 12/19 | **Final Day**  Poster Presentations of Final Projects <br /><br /> LOCATOIN: Center for Data Science, 60 5th ave, in the 7th floor open space | | |
 
 ###Bibliography
 There is no required book. Assigned readings will come from freely-available online material.
