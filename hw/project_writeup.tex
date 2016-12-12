@@ -1,0 +1,105 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+
+\pagestyle{empty} \addtolength{\textwidth}{2in}
+\addtolength{\textheight}{.8in} \addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-0.5in}
+\newcommand{\ruleskip}{\bigskip\hrule\bigskip}
+\newcommand{\nodify}[1]{{\sc #1}} \newcommand{\points}[1]{{\textbf{[#1
+points]}}}
+
+\newcommand{\bitem}{\begin{list}{$\bullet$}%
+{\setlength{\itemsep}{0pt}\setlength{\topsep}{0pt}%
+\setlength{\rightmargin}{0pt}}} \newcommand{\eitem}{\end{list}}
+
+%\newcommand{\bE}{\mbox{\boldmath $E$}}
+%\newcommand{\be}{\mbox{\boldmath $e$}}
+%\newcommand{\bU}{\mbox{\boldmath $U$}}
+%\newcommand{\bu}{\mbox{\boldmath $u$}}
+%\newcommand{\bQ}{\mbox{\boldmath $Q$}}
+%\newcommand{\bq}{\mbox{\boldmath $q$}}
+%\newcommand{\bX}{\mbox{\boldmath $X$}}
+%\newcommand{\bY}{\mbox{\boldmath $Y$}}
+%\newcommand{\bZ}{\mbox{\boldmath $Z$}}
+%\newcommand{\bx}{\mbox{\boldmath $x$}}
+%\newcommand{\by}{\mbox{\boldmath $y$}}
+%\newcommand{\bz}{\mbox{\boldmath $z$}}
+
+\setlength{\parindent}{10pt} \setlength{\parskip}{0.5ex}
+
+\begin{document}
+
+\pagestyle{myheadings} \markboth{}{DS-GA-1005, CSCI-GA.2569 Project Writeup}
+
+{\LARGE
+\begin{center}Inference and Representation, Fall 2016\end{center}
+}
+
+{\Large
+Instructions for Final Project Report
+}\\ \\
+\noindent{\bf Acknowledgement:} This is adapted from Vibhav Gogate.
+\ruleskip
+
+Below are guidelines on how to write-up your report for the final project. Not all of the comments may not be relevant to every project. However, please use it as a general guide in structuring your final report. A ``standard'' experimental machine learning paper consists of the following sections:
+
+\section{Introduction}
+Motivate and abstractly describe the problem you are solving and how you are addressing it. What is the problem? Why is it important? What is your basic approach?
+A short discussion of how it fits into related work in the area is also desirable.
+Summarize the basic results and conclusions that you will present.
+
+\section{Related Work}
+
+This section is optional. If in working on your project you came across other papers tackling the same or a similar problem, cite and describe the related work:
+What is their problem and method? How is your problem and method different? Why might your approach be better? How does your work fit in the bigger picture?
+
+\section{Problem Definition and Algorithm}
+\subsection{Task}
+
+Precisely define the problem you are addressing (i.e. formally specify the inputs and outputs).
+
+\subsection{Algorithm}
+
+Describe in reasonable detail the algorithm(s) you are using to address this problem. A pseudocode description of the algorithm(s) you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols.
+
+Your description of the algorithm should include what assumptions if any you are making about the data, and also what parameters or design choices need to be made (the consequences of these choices should then be explored in detail in the experimental evaluation).
+
+\section{Experimental Evaluation}
+
+\subsection{Data}
+
+Describe the data sets that you use in your experimental evaluation. If you do any feature pre-processing, this is the place to describe it.
+
+\subsection{Methodology}
+Describe the experimental methodology that you used. What are the
+criteria that you are using to evaluate your method? What specific
+hypotheses does your experiment test? If relevant for your project, did you do training/validate/test splits?
+Comparisons to competing methods that address the same problem are
+particularly useful, if relevant.
+
+\subsection{Results}
+
+Present the quantitative results of your experiments. Graphical data presentation such as graphs and histograms are frequently better than tables. What are the basic differences revealed in the data? Are they statistically significant? 
+
+\subsection{Discussion}
+
+Is your hypothesis supported? What conclusions do the results support about the strengths and weaknesses of your method compared to other methods? How can the results be explained in terms of the underlying properties of the algorithm and/or the data.
+
+\section{Conclusions}
+
+Briefly summarize the important results and conclusions presented in the paper. What are the most important points illustrated by your work?
+
+If you were to continue working on the project, what are the interesting areas for future work? What are the major shortcomings of your current method? For each shortcoming, propose additions or enhancements that would help overcome it.
+
+% How will your results improve future research and applications in the area?
+
+\section{Bilbiography}
+
+Be sure to include a standard, well-formated, comprehensive bibliography with citations from the text referring to previously published papers in the scientific literature, resources, or code that you utilized or referenced during your project.
+
+\end{document}
